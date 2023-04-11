@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link type="text/css" rel="stylesheet" href="js/bootstrap-select/css/bootstrap-select.min.css">
+ <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+ <script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="js/bootstrap-select/js/bootstrap-select.min.js"></script>
+</head>
+<body>
+  <div class="form-inline">
+    <div class="form-group">
+            <label for="exampleInputName1" style="margin-left:30px;">省份：</label>
+            
+            <select id="sheng" name="usertype" class="selectpicker show-tick form-control col-sm-1 select-sheng-width"  data-live-search="true">
+            
+            </select>
+            <butten class="btn btn-primary btn-add">添加</butten>
+            <butten class="btn btn-primary btn-delete">删除</butten>
+    </div>
+    <div class="form-group">
+            <label for="exampleInputName2" style="margin-left:20px;">城市：</label>
+            
+            <select id="school" name="usertype" class="selectpicker show-tick form-control col-sm-1 select-school-width"  data-live-search="true">
+            
+            </select>
+            <butten class="btn btn-primary btn-add">添加</butten>
+            <butten class="btn btn-primary btn-delete">删除</butten>
+    </div>
+    <div class="form-group">
+            <label for="exampleInputName3" style="margin-left:20px;">学校：</label>
+            
+            <select id="testName" name="usertype" class="selectpicker show-tick form-control col-sm-1 select-school-width"  data-live-search="true">
+                
+            </select>
+            <butten class="btn btn-primary btn-add">添加</butten>
+            <butten class="btn btn-primary btn-delete">删除</butten>
+    </div>
+</div>
+<script>
+  $(function() {
+     $("#sheng").selectpicker({
+         noneSelectedText: '全部',
+         countSelectedText: function(){}
+     });
+     $.ajax({
+                 url:'selectProvince',
+                 dataType:'json',
+                 type:'post',
+                 success:function(data){
+                         $.each(data, function (i, n) {
+                             $("#sheng").append(" <option value='"+n.id+"'>" + n.name + "</option>");
+                             
+                         })
+                          //缺一不可,
+                         $("#sheng").selectpicker('refresh');
+                         $('#sheng').selectpicker('render'); 
+                 }
+             
+             }); 
+})
+</script>
+</body>
+</html>

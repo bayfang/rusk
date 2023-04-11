@@ -1,0 +1,4 @@
+.hamu {transition: 0.5s;}
+:hover.hamu {
+  background-color:#4545FF;
+}

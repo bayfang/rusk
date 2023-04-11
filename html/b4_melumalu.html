@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link href="../css/lock.css">
+  <style>
+    .luna {
+      background-image: url(../img/joe-woods-4Zaq5xY5M_c-unsplash.jpg);
+      background-size: cover;
+      opacity: 0.9;
+    }
+    .lamda {
+      background-image: url(../img/peyman-farmani-1nBw4cGOuLY-unsplash.jpg);
+      background-size: cover;
+    }
+    .vbttn {width: 3rem;height: 3rem;position: fixed;right: 2%;bottom: 5%;}
+    .ftg {width: 80px; opacity: 0.9;}
+    .hwxb {
+      background-color: rgba(100,255,204,0.5);
+    }
+    .hwx {
+      /* background-color: white; */
+      background-color: rgba(100,255,204,0.5);
+      height: 240px;
+    }
+    .hamu {transition: 0.5s;}
+    :hover.hamu {
+      background-color: rgba(100,255,204,0.5);
+    }
+  </style>
+</head>
+
+<body class="lamda">
+  <nav class="navbar navbar-expand-lg navbar-light bg-black ">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="/html/b_main.html"><img src="../img/depositphotos_250123056-stock-photo-medical-marijuana-cannabis-logo-abstract.jpg" class="ftg"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light hamu" aria-current="page" href="../html/b_main.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light hamu" href="../html/b4_melumalu.html">隱私權政策</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light hamu" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              服務項目
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-black" href="../html/b5_fire.html">救火服務</a></li>
+              <li><a class="dropdown-item text-black" href="../html/b_main.html">企業團體行銷</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-black" href="../html/b_main.html">個人行銷</a></li>
+            </ul>
+          </li>
+          <li class="nav-item justify-content-end">
+            <a class="nav-link text-light hamu" href="#" tabindex="-1" aria-disabled="true" id="show">我要申請</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+      </div>
+    </div>
+  </nav>
+  <div class="text-center container-lg has-bg-img">
+    <div class="luna">
+      <br>
+      <br>
+      <h1 class="">隱私權政策</h1>
+      <br>
+      <br>
+    </div>
+  </div>
+
+  <br>
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10 text-center">
+      <br>
+      <div class="hwx">
+        <h2>個人資料使用相關</h2>
+        <h4>若您對本公司的服務有興趣，我們會請您提供必要的個人資料
+          ，包含姓名、電話、電子郵件...等，資料內容主要作為聯繫及行銷用途，
+          並在該特定目的範圍內處理及利用您的個人資料；若非經您書面同意，
+          本網站不會將個人資料用於其他用途。且請提供正確資料以做形象維護用途，
+        若提供不實資料造成損失本公司概不負責。</h4>
+        
+      </div> 
+      <br>
+    </div>
+    <div class="col-lg-1"></div>
+  </div>
+  <br>
+  <dialog id="infoModal">
+    <a href="b2_login.html"><h2>個人用戶請點此</h2></a>
+    <br>
+    <br>
+    <a href="b3_login.html"><h2>團體企業請點此</h2></a>
+  </dialog>
+  <script>
+    let btn=document.querySelector("#show");
+let infoModal=document.querySelector("#infoModal");
+btn.addEventListener("click", function(){
+  infoModal.showModal();
+})
+  </script>
+</body>
+
+</html>

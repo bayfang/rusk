@@ -1,0 +1,11 @@
+C:\Users\USER\Dropbox\lajuder\testu\testu\bin\Debug\testu.exe.config
+C:\Users\USER\Dropbox\lajuder\testu\testu\bin\Debug\testu.exe
+C:\Users\USER\Dropbox\lajuder\testu\testu\bin\Debug\testu.pdb
+C:\Users\USER\Dropbox\lajuder\testu\testu\obj\Debug\testu.csproj.AssemblyReference.cache
+C:\Users\USER\Dropbox\lajuder\testu\testu\obj\Debug\testu.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Dropbox\lajuder\testu\testu\obj\Debug\testu.Form1.resources
+C:\Users\USER\Dropbox\lajuder\testu\testu\obj\Debug\testu.Properties.Resources.resources
+C:\Users\USER\Dropbox\lajuder\testu\testu\obj\Debug\testu.csproj.GenerateResource.cache
+C:\Users\USER\Dropbox\lajuder\testu\testu\obj\Debug\testu.csproj.CoreCompileInputs.cache
+C:\Users\USER\Dropbox\lajuder\testu\testu\obj\Debug\testu.exe
+C:\Users\USER\Dropbox\lajuder\testu\testu\obj\Debug\testu.pdb
